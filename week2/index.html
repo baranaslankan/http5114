@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Git!</title>
+
+    <script type="text/javascript">
+        function greet() {
+            var name = document.greet.name.value;
+            var age = document.greet.age.value;
+            
+            document.getElementById("greetMessage").innerHTML=`Hello ${name} you are ${age} years old !`
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Welcome to Git!</h1>
+
+    <p>Git is hard!</p>
+
+    <form name="greet">
+        <label for="name">What is your name ?</label><br />
+        <input name="name" id="name" type="text" /><br />
+        <label for="age">How old are you ?</label><br />
+        <input name="age" id="age" type="number" /><br />
+        <button onClick="greet()" type="submit">Submit</button>
+    </form>
+
+    <p id="greetMessage"></p>
+
+</body>
+
+</html>
